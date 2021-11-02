@@ -1,0 +1,20 @@
+/*Esperanza Rodríguez Martínez*/
+
+main p
+{	
+	font-size:large;
+}
+main h2
+{	
+	text-decoration:underline;
+	font-size:xx-large;
+}
+main h3,#aside2 a
+{	
+	font-weight:bold;
+	font-size:x-large;
+}
+#aside2 a
+{	
+	color:black;
+}

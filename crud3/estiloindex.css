@@ -1,0 +1,31 @@
+/*Esperanza Rodríguez Martínez*/
+
+table
+{
+	Border-collapse:collapse;
+	background-color:#C9FAC7;
+	width:100%;	/*Tamaño ocupado por la tabla (todo el espacio útil del aside2*/
+	text-align:center;
+}
+td,tr,th,table
+{
+	border:3px solid #ffffff;
+}
+
+td,tr,th
+{
+	/* Tamaño del padding calculado con respecto a 1180px de tamaño main (tamaño útil caja contenedora)*/
+	padding:0.8474%;	/*Margen del espacio útil al borde del contenedor*/
+}
+th
+{
+	font-weight:bold;
+}
+td a
+{
+	color:black;
+}
+td a,th
+{
+	font-size:large;
+}

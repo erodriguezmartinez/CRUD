@@ -1,0 +1,145 @@
+/*Esperanza*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*-------------------------------------------*/
+
+#aside1,nav
+{
+	float:left;	/*Flotar nav y caja de información hacia el mismo lado*/
+}
+/* Tamaño de html definidio para pruebas */
+/* html  */
+/* {  */
+	/* width:1300px; */
+ /* }  */
+body
+{
+	/* Tamaño con respecto a los 1300px de tamaño html*/
+	width:92.307%;	/*Tamaño util*/
+	margin: 0 auto;	/*Centrar contenido*/
+	background-color:#A1FF9E;
+}
+header
+{
+	height:100px;
+	font-style:italic;
+	background-color:#3EDBBE;
+	font-family:Milasian Circa;
+	font-size:xxx-large;
+}
+header,#aside1,footer
+{
+	/* Tamaño con respecto a los 1300px */
+	width:92.307%;
+	text-align:center;
+}
+#aside1,footer
+{
+	height:50px;
+	background-color:#E2E194;
+	/* Padding calculado con respecto al espacio útil del contenedor(1200px) */
+	padding-top:1.666%;	/*Margen superior del espacio útil al borde del contenedor*/
+}
+footer
+{
+	font-size:medium;
+	font-family:Calibri;
+}
+header,aside,footer,main,nav
+{
+	text-align:center;
+}
+main
+{
+	/* Tamaño útil del main calculado con respecto a 1300px de tamaño html (tamaño útil caja contenedora)*/
+	width:90.7692%;	 /*Tamaño útil*/
+	/* Tamaño del padding calculado con respecto a 1300px de tamaño html */
+	padding:0.7692%;	/*Margen del espacio útil al borde del contenedor*/
+	min-height:600px;	/*Tamaño mínimo de altura a ocupar */
+	background-image:url(imagenes/fondo.jpg);
+	overflow:hidden;	/*Para que se ajuste su altura al contenido */
+}
+nav
+{
+	/* Tamaño útil del nav calculado con respecto a 1180px de tamaño del main (tamaño útil caja contenedora)*/
+	width:25.423%;	/*Tamaño útil */
+	min-height:300px;	/*Tamaño mínimo de altura a ocupar */
+	/* Tamaño del padding calculado con respecto a 1180px de tamaño main (tamaño útil caja contenedora)*/
+	padding-left:0.8474%;	/*Margen izquierdo del espacio útil al borde del contenedor*/
+	padding-top:0.8474%;	/*Margen superior del espacio útil al borde del contenedor*/
+	background-color:#9e97ff;
+	overflow:hidden;	/*Para que se ajuste su altura al contenido */
+}
+#aside2
+{
+	/* Tamaño útil del nav calculado con respecto a 1180px de tamaño del main (tamaño útil caja contenedora)*/
+	width:69.6610%;	/*Tamaño útil */
+	min-height:260px;	/*Tamaño mínimo de altura a ocupar */
+	/* Tamaño del padding calculado con respecto a 1180px de tamaño main (tamaño útil caja contenedora)*/
+	padding:1.6949%;	/*Margen del espacio útil al borde del contenedor*/
+	background-color:#d4ffff;
+	overflow:hidden;	/*Para que se ajuste su altura al contenido */
+}
+#aside2,nav
+{
+	border:2px solid white;
+}
+nav a,footer,#aside1
+{
+	color:white;
+	font-size:x-large;
+}
+a:hover
+{
+	color:#3EDBBE;
+}
+nav a
+{
+	text-decoration:none;
+}

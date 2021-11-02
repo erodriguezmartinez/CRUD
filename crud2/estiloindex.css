@@ -1,0 +1,43 @@
+/*Esperanza Rodríguez Martínez*/
+
+main
+{
+	width:1176px;
+	padding:10px;
+	min-height:600px;
+	overflow:hidden;
+	background-image:url(imagenes/fondo.jpg);
+}
+table
+{
+	Border-collapse:collapse;
+	border-spacing:2px;
+	background-color:#C9FAC7;
+	width:100%;
+	text-align:center;
+}
+td,tr,th,table
+{
+	border:3px solid #ffffff;
+}
+
+td,tr,th
+{
+	padding:10px;
+}
+th
+{
+	font-weight:bold;
+}
+td a
+{
+	color:black;
+}
+td a,th
+{
+	font-size:large;
+}
+td a:hover
+{
+	color:#3EDBBE;
+}
