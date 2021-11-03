@@ -4,6 +4,7 @@
 	<head>
 		<title>Administrar crud</title>
 		<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" "ISO-8859-1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="estilogeneral.css" rel="stylesheet" type="text/css">
 		<link href="estilomostar.css" rel="stylesheet" type="text/css">
 	</head>
@@ -15,14 +16,14 @@
 			Confirmación de borrado de empleado
 		</aside>
 		<!--CUERPO DE LA PÁGINA-->
-			<?php 
-				
+			<?php
+
 				//Incluimos el archivo crud.php para utilizar las funciones definidas en el
 				include('crud.php');
 				$crud = new Crud();
-				
-				$fila=$crud->mostrar($_GET["id"]);	
-				
+
+				$fila=$crud->mostrar($_GET["id"]);
+
 				//Mostramos la información del empleado
 				echo'<main>
 					<nav>
@@ -49,7 +50,7 @@
 				<footer>
 					Panel de Administración
 				</footer>';
-				
-			?>		
+
+			?>
 	</body>
 </html>

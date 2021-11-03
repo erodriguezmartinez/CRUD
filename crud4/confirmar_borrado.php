@@ -1,5 +1,5 @@
 <!--Esperanza Rodríguez Martínez-->
-<!--PÁGINA PARA CONSULTAR EMPLEADO-->
+<!--PÁGINA PARA PREGUNTAR CONFIRMACIÓN DE BORRADO-->
 <html>
 	<head>
 		<title>Administrar crud</title>
@@ -13,7 +13,7 @@
 		<header>Administrar</header>
 		<!--TITULO-->
 		<aside id="aside1">
-			Consultar empleados
+			Confirmación de borrado de empleado
 		</aside>
 		<!--CUERPO DE LA PÁGINA-->
 			<?php
@@ -29,27 +29,29 @@
 					<nav>
 						<a href="index.php">Listado</a>
 						<br /><br />
-						<a href="anadir.html">Añadir</a>
+						<a href="anadir.html">Añadir</a><br /><br />
+						<a href="buscar.php?bu=DNI">Buscar por DNI</a><br /><br />
+						<a href="buscar.php?bu=Nombre">Buscar por Nombre</a>
 					</nav>
 					<aside id="aside2">
+						<h2>¿Desea borrar al siguente empleado?</h2><br />
 						<h3>Id Empleado</h3>
 						<p>'.$fila["IdEmpleados"].'</p><br />
 						<h3>Nombre</h3>
 						<p>'.$fila["Nombre"].'</p><br />
 						<h3>DNI</h3>
-						<p>"'.$fila["DNI"].'</p><br />
+						<p>'.$fila["DNI"].'</p><br />
 						<h3>Correo</h3>
 						<p>'.$fila["Correo"].'</p><br />
 						<h3>Teléfono</h3>
 						<p>'.$fila["Telefono"].'</p><br />
 
-						<td><a href="datoscrud.php?id='.$fila["IdEmpleados"].'&op=modificar">Modificar</a></td>
+						<td><a href="datoscrud.php?id='.$fila["IdEmpleados"].'&op=borrar&sw=2">Borrar</a></td>
 					</aside>
 				</main>
 				<footer>
 					Panel de Administración
 				</footer>';
-
 
 			?>
 	</body>

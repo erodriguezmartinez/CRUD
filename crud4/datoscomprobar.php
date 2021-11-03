@@ -3,8 +3,7 @@
 //VALIDAMOS LOS DATOS DEL FORMULARIO TANTO PARA AÑADIR COMO PARA MODIFICAR--------------->
 
 	//Validamos los datos introducidos
-	if(empty($_POST["nombre_completo"]) || is_numeric($_POST["nombre_completo"])
-		|| empty($_POST["DNI"]) || is_numeric($_POST["DNI"])
+	if(empty($_POST["nombre_completo"]) || is_numeric($_POST["nombre_completo"]) || empty($_POST["DNI"])
 		|| is_numeric($_POST["correo"]) || empty($_POST["telefono"]) || !is_numeric($_POST["telefono"])){
 
 			if($_POST["enviar"]=="Añadir"){
@@ -16,9 +15,11 @@
 			if(empty($_POST["nombre_completo"]) || is_numeric($_POST["nombre_completo"])){
 				echo "ERROR en la entrada del nombre. <br />";
 			}
-			if(empty($_POST["DNI"]) || is_numeric($_POST["DNI"])){
+
+			if(empty($_POST["DNI"])){
 				echo "ERROR en la entrada del DNI. <br />";
 			}
+
 			if(is_numeric($_POST["correo"])){
 				echo "ERROR en la entrada del correo. <br />";
 			}

@@ -29,7 +29,9 @@
 					<nav>
 						<a href="index.php">Listado</a>
 						<br /><br />
-						<a href="anadir.html">Añadir</a>
+						<a href="anadir.html">Añadir</a><br /><br />
+						<a href="buscar.php?bu=DNI">Buscar por DNI</a><br /><br />
+						<a href="buscar.php?bu=Nombre">Buscar por Nombre</a>
 					</nav>
 					<aside id="aside2">
 						<h3>Id Empleado</h3>
@@ -37,7 +39,7 @@
 						<h3>Nombre</h3>
 						<p>'.$fila["Nombre"].'</p><br />
 						<h3>DNI</h3>
-						<p>"'.$fila["DNI"].'</p><br />
+						<p>'.$fila["DNI"].'</p><br />
 						<h3>Correo</h3>
 						<p>'.$fila["Correo"].'</p><br />
 						<h3>Teléfono</h3>

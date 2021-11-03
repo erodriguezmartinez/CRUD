@@ -41,7 +41,10 @@
 		<main>
 			<nav>
 				<a href="index.php">Listado</a><br /><br />
-				<a href="anadir.html">Añadir</a>
+				<a href="anadir.html">Añadir</a><br /><br />
+				<a href="buscar.php?bu=DNI">Buscar por DNI</a><br /><br />
+				<a href="buscar.php?bu=Nombre">Buscar por Nombre</a>
+				
 			</nav>
 			<aside id="aside2">
 				<!--TABLA-->

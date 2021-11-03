@@ -31,7 +31,9 @@
 					<nav>
 						<a href="index.php">Listado</a>
 						<br /><br />
-						<a href="anadir.html">Añadir</a>
+						<a href="anadir.html">Añadir</a><br /><br />
+						<a href="buscar.php?bu=DNI">Buscar por DNI</a><br /><br />
+						<a href="buscar.php?bu=Nombre">Buscar por Nombre</a>
 					</nav>
 					<aside id="aside2">
 						<form action="datoscomprobar.php" method="post">
@@ -41,7 +43,7 @@
 							<input type="text" value="'.$fila["Nombre"].'" name="nombre_completo" placeholder="Nombre" maxlength="30"/>
 							<br /><br />
 							<label>DNI:</label><br />
-							<input type="text" value="'.$fila["DNI"].'" name="DNI" placeholder="DNI" maxlength="9" />
+							<input type="text" value="'.$fila["DNI"].'" name="DNI" placeholder="DNI" maxlength="9" pattern="[0-9]{8}[A-Za-z]"/>
 							<br /><br />
 							<label>Correo:</label><br />
 							<input type="email" value="'.$fila["Correo"].'" name="correo" placeholder="ejemplo@gmail.com" />
