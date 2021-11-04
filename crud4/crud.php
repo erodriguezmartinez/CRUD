@@ -68,7 +68,7 @@
 
 		function buscardni($dni){
 
-			$consulta = "SELECT * FROM Empleados WHERE DNI LIKE '".$dni."%';";		//Consulta a ejecutar
+			$consulta = "SELECT * FROM Empleados WHERE DNI = '".$dni."';";		//Consulta a ejecutar
 			$this->resultado = mysqli_query($this->conexion, $consulta);
 			require 'buscar.php';
 			mostrar($this->resultado);
@@ -76,7 +76,7 @@
 
 		function buscarnombre($nombre){
 
-			$consulta = "SELECT * FROM Empleados WHERE Nombre LIKE '".$nombre."%';";	//Consulta a ejecutar
+			$consulta = "SELECT * FROM Empleados WHERE Nombre LIKE '%".$nombre."%';";	//Consulta a ejecutar
 			$this->resultado = mysqli_query($this->conexion, $consulta);
 			require 'buscar.php';
 			mostrar($this->resultado);

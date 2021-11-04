@@ -37,6 +37,7 @@
                 <input type="submit" name="enviar" id="solicitar" value="Buscar">
               </div>
             </form>';
+			
             function mostrar($resultado){
 
 				echo'<div id="resultado">
